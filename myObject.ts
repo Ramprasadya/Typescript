@@ -46,3 +46,20 @@ let myUser:UserOne = {
      email:"m@gmail.com",
      isActive:true
 }
+
+myUser.email = "g@g.com"
+// myUser._id : "rgerg4"
+
+
+type cardNumber = {
+    cardNumber: number
+}
+
+type cardDate = {
+    cardDate : string
+}
+
+type cardDetails = cardNumber & cardDate & {
+    cvv : number
+}
+
