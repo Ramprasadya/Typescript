@@ -30,3 +30,19 @@ type User={
 function CreateUsers(user:User):User{      //must return a value if (user:User):User
    return {name:"",email:"",isActive:true}
 }
+
+
+type UserOne ={
+    readonly _id : string;
+    name:string;
+    email:string;
+    isActive:boolean;
+    creditCardDetails?:number;
+}
+
+let myUser:UserOne = {
+     _id:"12345",
+     name:"manish",
+     email:"m@gmail.com",
+     isActive:true
+}
