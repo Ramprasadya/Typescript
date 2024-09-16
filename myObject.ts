@@ -19,3 +19,14 @@ CreateUser(newUser) //And now this is workin fine
 function CreateCourse():{name:string,price:number}{
         return {name:"reactjs",price:299}
 }
+
+type User={
+
+    name:string;
+    email:string;
+    isActive:boolean
+}
+
+function CreateUsers(user:User):User{      //must return a value if (user:User):User
+   return {name:"",email:"",isActive:true}
+}
