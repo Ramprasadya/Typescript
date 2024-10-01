@@ -38,4 +38,4 @@ const data4 : (number|string|boolean)[] = [12,"34",false]  // this is the way to
 let air : "aisle" | "window" | "prime"
 
 air = "aisle"
-// air = "crew" it will now allow 
+// air = "crew" //it will now allow 
