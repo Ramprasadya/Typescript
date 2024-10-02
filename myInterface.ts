@@ -9,9 +9,19 @@ interface User {
 
 }
 
+// Reopening Interface
+interface User{
+    githubToken : string
+}
 
-const hitesh:User = {
+interface Admin extends User {  // this is how inheritence work 
+    email : string
+}
+
+
+const hitesh:Admin = {
     db:"2334",
+    email:"ram@gmail.com",
     name:"hetesh",
     userId:34   ,
     Starttrial:()=>{
@@ -19,6 +29,7 @@ const hitesh:User = {
     },
     CuponCode:(code:"hitesh",off:20)=>{ // No matter what function i applied but rturn will be a number 
     return 10
-    }
+    },
+    githubToken:"gtihub"
 }
 
