@@ -11,6 +11,8 @@ class Form {
     constructor(name, email) {
         this.name = name;
         this.email = email;
+        // private _courseCount = 1; we can not acces the value if it is private in inheritance
+        // Protected can use 
         this._courseCount = 1;
         this.city = "varanasi";
     }
@@ -27,6 +29,15 @@ class Form {
             throw new Error("CourseNum can should be 1");
         }
         this._courseCount = courseNum;
+    }
+}
+class subUser extends Form {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
     }
 }
 let yadav = new Form("rhaul", "rahul@gmail.com");

@@ -13,7 +13,9 @@ const Ram = new User("ram@gmail.com", "ram");
 
 class Form {
 
-  private _courseCount = 1;
+  // private _courseCount = 1; we can not acces the value if it is private in inheritance
+  // Protected can use 
+  protected _courseCount = 1;
 
   readonly city: string = "varanasi";
   constructor(
@@ -44,6 +46,15 @@ class Form {
     this._courseCount = courseNum
 
   }
+
+}
+
+class subUser extends Form {
+
+  isFamily:boolean = true;
+ changeCourseCount(){
+  this._courseCount = 4
+ }
 
 }
 
